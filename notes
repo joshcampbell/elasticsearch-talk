@@ -1,0 +1,22 @@
+# The Rosetta Stone
+
+Elasticsearch's storage mechanism, if you squint, is very similar to the model
+you're familiar with from relational databases. During this talk, I'll be unable
+to avoid using certain terms interchangably:
+
+relational vs elasticsearch
+----------    -------------
+database  <-> index
+table     <-> type mapping
+row       <-> document
+column    <-> field
+
+# Some Interesting Elastisearch Queries
+
+`
+curl localhost:9200/_mapping
+`
+
+Dumps all of the mappings of all of the types in all of of your indices.
+
+### curl 
