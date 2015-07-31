@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Elasticsearch</title>
+    <script src="weenote.js"></script>
+    <style type="text/css">
+      * { font-family: 'Arvo'; }
+      li { list-style-type: square; font-family: "Roboto Slab" }
+      pre, pre * { font-family: "Inconsolata"; }
+      body { background-color: #002b36;
+             color: #839496; 
+             }
+      div { padding: 70px;}
+      h1 { color: #268bd2; }
+      h3 { border-bottom: solid; padding-bottom: 15px; color: #93a1a1; }
+      .keyword { color: #d33682 }
+      .faded { color: #586e75 }
+    </style>
+  </head>
+  <body>
+  <div><h1>Elasticsearch</h1></div>
+    <div>
+      <h3>So Many Joins</h3>
+      <ul>
+        <li>A document is not a document.</li>
+        <li>Flexibility + denormalization = tons of joins</li>
+        <li>Searching and reporting are complex and expensive</li>
+      </ul>
+    </div>
+    <div>
+      <h3>So Do Them Ahead of Time</h3>
+      <ul>
+        <li>Secondary reporting database</li>
+        <li>NoSQL / document stores</li>
+        <li>Cache the results of expensive operations</li>
+      </ul>
+    </div>  
+    <div>
+      <h3>Two Weeks' Research</h3>
+      <ul>
+        <li>Cassandra - kind of awful</li>
+        <li>Redis - Great, but not what we need</li>
+        <li>Elasticsearch - very promising</li>
+      </ul>
+    </div>
+    <div>
+      <h3>What is Elasticsearch?</h3>
+      <ul>
+        <li>Data distributed redundantly across cluster of servers</li>
+        <li>Documents indexed by Lucene (venerable search library)</li>
+        <li>Documents subdivided into typed fields</li>  
+        <li>Communicates using JSON over HTTP</li>
+      </ul>
+    </div>
+    <div><h1>Demo</h1></div>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+#!/usr/bin/env python3.4
+
+import subprocess
+import requests
+import sys
+import json
+
+from argparse import ArgumentParser
+from pprint import pformat
+
+# Parse arguments
+parser = ArgumentParser(description='invoke curl and pretty-print the response')
+parser.add_argument('--verb','-v', default='get',
+                   help="""Case-insensitive HTTP verb to pass through to curl.
+                           Defaults to get.""")
+parser.add_argument('path', help="path relative to locahost:9200")
+args = parser.parse_args()
+
+verb = args.verb
+path = args.path
+
+# Build curl invocation
+
+invocation = "curl -X%s localhost:9200%s"%(verb, path)
+
+# Invoke curl and pretty-print the output
+shell = subprocess.Popen(invocation.split(" "))
+shell.wait()
+print(shell.stdout)
+#output = json.dumps(json.loads(res))
+#shell.stdout.write(output)

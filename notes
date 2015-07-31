@@ -19,4 +19,12 @@ curl localhost:9200/_mapping
 
 Dumps all of the mappings of all of the types in all of of your indices.
 
-### curl 
+Searches for documents containing a precise string value in a field.
+
+Performs a full-text search over all of the documents in the index.
+
+First-created document containing a precise string value in a field.
+
+Last-created document containing a precise string value in a field.
+
+# Exporting Data to Elasticsearch
